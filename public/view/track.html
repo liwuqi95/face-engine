@@ -1,0 +1,52 @@
+<div ng-controller="trackController as main">
+
+    <a ng-click='back()' class="back-button"><i class="fa fa-arrow-left"></i></a>
+
+    <div class="container" style="margin: 0; max-width: none;">
+        <div class="row">
+
+            <div class="col-md-3">
+                <div class="main-profile">
+                    <h6 style="padding-top: 10px"><strong style="color:#007bff;">|</strong> 王小明</h6>
+                    <img src="/images/1.jpg" class="main-image">
+                    <h6 style="padding-top: 10px"><strong style="color:#007bff;">|</strong> 轨迹地图</h6>
+                    <img src="/images/map.png" class="main-image">
+                </div>
+            </div>
+
+
+            <div class="col-md-9">
+                <h5 class="text-center">--最近轨迹--</h5>
+                <div class="track-image-container">
+                    <h6 style="padding-top: 10px"><strong style="color:#007bff;">|</strong> 17:45 山东省济宁市万达广场东侧</h6>
+
+                    <div class="row">
+                        <div class="col-md-3 col-6" ng-repeat="result in resultList">
+                            <img src="/images/monitor.jpg" class="track-image">
+                        </div>
+                    </div>
+
+                    <h6 style="padding-top: 10px"><strong style="color:#007bff;">|</strong> 17:45 山东省济宁市万达广场东侧</h6>
+
+                    <div class="row">
+                        <div class="col-md-3 col-6" ng-repeat="result in resultList">
+                            <img src="/images/monitor.jpg" class="track-image">
+                        </div>
+                    </div>
+
+                    <h6 style="padding-top: 10px"><strong style="color:#007bff;">|</strong> 17:45 山东省济宁市万达广场东侧</h6>
+
+                    <div class="row">
+                        <div class="col-md-3 col-6" ng-repeat="result in resultList">
+                            <img src="/images/monitor.jpg" class="track-image">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+</div>
